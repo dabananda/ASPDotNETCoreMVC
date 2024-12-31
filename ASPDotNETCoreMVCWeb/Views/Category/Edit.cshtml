@@ -2,9 +2,10 @@
 
 <div>
 	<form method="post" class="border p-3 w-50 mx-auto">
-		<h2>Create New Category</h2>
+		<h2>Edit Category</h2>
 		<hr />
 		@* <div asp-validation-summary="All"></div> *@
+		<input asp-for="Id" type="hidden" />
 		<div class="form-group mb-3 row">
 			<label asp-for="Name" class="p-0"></label>
 			<input asp-for="Name" type="text" class="form-control" />
@@ -17,7 +18,7 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<button type="submit" class="w-100 btn btn-primary col from-control">Create Category</button>
+				<button type="submit" class="w-100 btn btn-primary col from-control">Update Category</button>
 			</div>
 			<div class="col">
 				<a class="w-100 btn btn-outline-secondary border from-control" asp-controller="Category" asp-action="Index">Back to Category</a>
